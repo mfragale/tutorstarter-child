@@ -11,6 +11,11 @@ function my_theme_enqueue_styles()
 }
 
 
+// Remove the additional notes area from the WooCommerce checkout
+add_filter('woocommerce_enable_order_notes_field', '__return_false');
+
+
+
 
 
 // Nova College MODIFIED
