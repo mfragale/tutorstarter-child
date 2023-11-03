@@ -41,7 +41,7 @@ $profile_data = array(
 	array(__('Biography', 'tutor'), $bio ? $bio : '-'),
 
 	// Nova College MODIFIED
-	array(__('CPF', 'tutor'), $cpf ? $cpf : '-'),
+	// array(__('CPF', 'tutor'), $cpf ? $cpf : '-'),
 	array(__('Phone Number', 'tutor'), $phone_no ? $phone_no : '-'),
 );
 ?>

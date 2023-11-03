@@ -151,12 +151,15 @@ $max_filesize   = floatval(ini_get('upload_max_filesize')) * (1024 * 1024);
 
 		<div class="tutor-row">
 			<!-- Nova College MODIFIED -->
-			<div class="tutor-col-12 tutor-col-sm-6 tutor-col-md-12 tutor-col-lg-6 tutor-mb-32">
+			<!-- <div class="tutor-col-12 tutor-col-sm-6 tutor-col-md-12 tutor-col-lg-6 tutor-mb-32">
 				<label class="tutor-form-label tutor-color-secondary">
-					<?php _e('CPF', 'tutor'); ?>
+					<?php // _e('CPF', 'tutor'); 
+					?>
 				</label>
-				<input class="tutor-form-control" type="number" min="1" name="cpf" value="<?php echo get_user_meta($user->ID, '_cpf', true); ?>" placeholder="<?php _e('CPF', 'tutor'); ?>">
-			</div>
+				<input class="tutor-form-control" type="number" min="1" name="cpf" value="<?php // echo get_user_meta($user->ID, '_cpf', true); 
+																							?>" placeholder="<?php // _e('CPF', 'tutor'); 
+																																									?>">
+			</div> -->
 			<!-- Nova College MODIFIED -->
 
 			<div class="tutor-col-12 tutor-col-sm-6 tutor-col-md-12 tutor-col-lg-6 tutor-mb-32">

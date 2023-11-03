@@ -115,17 +115,20 @@
 			<!-- Nova College MODIFIED -->
 
 			<!-- Nova College MODIFIED -->
-			<div class="tutor-form-row">
+			<!-- <div class="tutor-form-row">
 				<div class="tutor-form-col-6">
 					<div class="tutor-form-group">
 						<label>
-							<?php _e('CPF', 'tutor'); ?>
+							<?php // _e('CPF', 'tutor'); 
+							?>
 						</label>
 
-						<input type="text" name="cpf" value="<?php echo tutor_utils()->input_old('cpf'); ?>" placeholder="<?php _e('CPF', 'tutor'); ?>">
+						<input type="text" name="cpf" value="<?php // echo tutor_utils()->input_old('cpf'); 
+																?>" placeholder="<?php // _e('CPF', 'tutor'); 
+																																?>">
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- Nova College MODIFIED -->
 
 			<div class="tutor-form-row">

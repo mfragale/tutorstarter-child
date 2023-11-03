@@ -44,12 +44,14 @@ wp_enqueue_media();
 	</tr>
 
 	<!-- Nova College MODIFIED -->
-	<tr class="user-description-wrap">
-		<th><label for="description"><?php esc_html_e('CPF', 'tutor'); ?></label></th>
+	<!-- <tr class="user-description-wrap">
+		<th><label for="description"><?php // esc_html_e('CPF', 'tutor'); 
+										?></label></th>
 		<td>
-			<input type="text" name="CPF" id="cpf" value="<?php echo esc_attr(get_user_meta($user->ID, 'cpf', true)); ?>" class="regular-text" />
+			<input type="text" name="CPF" id="cpf" value="<?php // echo esc_attr(get_user_meta($user->ID, 'cpf', true)); 
+															?>" class="regular-text" />
 		</td>
-	</tr>
+	</tr> -->
 	<!-- Nova College MODIFIED -->
 
 	<tr class="user-description-wrap">

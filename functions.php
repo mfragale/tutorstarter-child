@@ -14,25 +14,25 @@ function my_theme_enqueue_styles()
 
 
 // Nova College MODIFIED
-add_filter('tutor_student_registration_required_fields', 'required_cpf_no_callback');
-if (!function_exists('required_cpf_no_callback')) {
-    function required_cpf_no_callback($atts)
-    {
-        $atts['cpf'] = 'CPF';
-        return $atts;
-    }
-}
-add_action('user_register', 'add_cpf_after_user_register');
-add_action('profile_update', 'add_cpf_after_user_register');
-if (!function_exists('add_cpf_after_user_register')) {
-    function add_cpf_after_user_register($user_id)
-    {
-        if (!empty($_POST['cpf'])) {
-            $cpf = sanitize_text_field($_POST['cpf']);
-            update_user_meta($user_id, '_cpf', $cpf);
-        }
-    }
-}
+// add_filter('tutor_student_registration_required_fields', 'required_cpf_no_callback');
+// if (!function_exists('required_cpf_no_callback')) {
+//     function required_cpf_no_callback($atts)
+//     {
+//         $atts['cpf'] = 'CPF';
+//         return $atts;
+//     }
+// }
+// add_action('user_register', 'add_cpf_after_user_register');
+// add_action('profile_update', 'add_cpf_after_user_register');
+// if (!function_exists('add_cpf_after_user_register')) {
+//     function add_cpf_after_user_register($user_id)
+//     {
+//         if (!empty($_POST['cpf'])) {
+//             $cpf = sanitize_text_field($_POST['cpf']);
+//             update_user_meta($user_id, '_cpf', $cpf);
+//         }
+//     }
+// }
 // Nova College MODIFIED
 
 
