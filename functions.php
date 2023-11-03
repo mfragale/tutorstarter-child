@@ -13,23 +13,47 @@ function my_theme_enqueue_styles()
 
 
 
-
-add_filter('tutor_student_registration_required_fields', 'required_nid_no_callback');
-if (!function_exists('required_nid_no_callback')) {
-    function required_nid_no_callback($atts)
+// Nova College MODIFIED
+add_filter('tutor_student_registration_required_fields', 'required_cpf_no_callback');
+if (!function_exists('required_cpf_no_callback')) {
+    function required_cpf_no_callback($atts)
     {
-        $atts['nid'] = 'National Id';
+        $atts['cpf'] = 'CPF';
         return $atts;
     }
 }
-add_action('user_register', 'add_nid_after_user_register');
-add_action('profile_update', 'add_nid_after_user_register');
-if (!function_exists('add_nid_after_user_register')) {
-    function add_nid_after_user_register($user_id)
+add_action('user_register', 'add_cpf_after_user_register');
+add_action('profile_update', 'add_cpf_after_user_register');
+if (!function_exists('add_cpf_after_user_register')) {
+    function add_cpf_after_user_register($user_id)
     {
-        if (!empty($_POST['nid'])) {
-            $nid = sanitize_text_field($_POST['nid']);
-            update_user_meta($user_id, '_nid', $nid);
+        if (!empty($_POST['cpf'])) {
+            $cpf = sanitize_text_field($_POST['cpf']);
+            update_user_meta($user_id, '_cpf', $cpf);
         }
     }
 }
+// Nova College MODIFIED
+
+
+// Nova College MODIFIED
+add_filter('tutor_student_registration_required_fields', 'required_phone_no_callback');
+if (!function_exists('required_phone_no_callback')) {
+    function required_phone_no_callback($atts)
+    {
+        $atts['phone_no'] = 'Phone Number field is required';
+        return $atts;
+    }
+}
+add_action('user_register', 'add_phone_after_user_register');
+add_action('profile_update', 'add_phone_after_user_register');
+if (!function_exists('add_phone_after_user_register')) {
+    function add_phone_after_user_register($user_id)
+    {
+        if (!empty($_POST['phone_no'])) {
+            $phone_number = sanitize_text_field($_POST['phone_no']);
+            update_user_meta($user_id, 'phone_no', $phone_number);
+        }
+    }
+}
+// Nova College MODIFIED

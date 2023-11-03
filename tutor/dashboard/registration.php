@@ -101,13 +101,29 @@
 			</div>
 
 			<!-- Nova College MODIFIED -->
-			<div class="tutor-form-col-6">
-				<div class="tutor-form-group">
-					<label>
-						<?php _e('NId', 'tutor'); ?>
-					</label>
+			<div class="tutor-form-row">
+				<div class="tutor-form-col-6">
+					<div class="tutor-form-group">
+						<label>
+							<?php _e('Phone Number', 'tutor'); ?>
+						</label>
 
-					<input type="text" name="nid" value="<?php echo tutor_utils()->input_old('nid'); ?>" placeholder="<?php _e('NID', 'tutor'); ?>">
+						<input type="text" name="phone_no" value="<?php echo tutor_utils()->input_old('phone_no'); ?>" placeholder="<?php _e('Phone Number', 'tutor'); ?>">
+					</div>
+				</div>
+			</div>
+			<!-- Nova College MODIFIED -->
+
+			<!-- Nova College MODIFIED -->
+			<div class="tutor-form-row">
+				<div class="tutor-form-col-6">
+					<div class="tutor-form-group">
+						<label>
+							<?php _e('CPF', 'tutor'); ?>
+						</label>
+
+						<input type="text" name="cpf" value="<?php echo tutor_utils()->input_old('cpf'); ?>" placeholder="<?php _e('CPF', 'tutor'); ?>">
+					</div>
 				</div>
 			</div>
 			<!-- Nova College MODIFIED -->

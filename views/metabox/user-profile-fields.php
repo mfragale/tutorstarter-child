@@ -45,9 +45,9 @@ wp_enqueue_media();
 
 	<!-- Nova College MODIFIED -->
 	<tr class="user-description-wrap">
-		<th><label for="description"><?php esc_html_e('Your Field Name', 'tutor'); ?></label></th>
+		<th><label for="description"><?php esc_html_e('CPF', 'tutor'); ?></label></th>
 		<td>
-			<input type="text" name="your_filed_name" id="your_filed_name" value="<?php echo esc_attr(get_user_meta($user->ID, 'your_filed_name', true)); ?>" class="regular-text" />
+			<input type="text" name="CPF" id="cpf" value="<?php echo esc_attr(get_user_meta($user->ID, 'cpf', true)); ?>" class="regular-text" />
 		</td>
 	</tr>
 	<!-- Nova College MODIFIED -->

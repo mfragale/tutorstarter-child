@@ -26,7 +26,8 @@ $job   = nl2br(wp_strip_all_tags(get_user_meta($uid, '_tutor_profile_job_title',
 $bio   = get_user_meta($uid, '_tutor_profile_bio', true);
 
 // Nova College MODIFIED
-$nid = get_user_meta($uid, '_nid', true);
+$cpf = get_user_meta($uid, '_cpf', true);
+$phone_no = get_user_meta($uid, '_phone_no', true);
 
 
 $profile_data = array(
@@ -40,7 +41,8 @@ $profile_data = array(
 	array(__('Biography', 'tutor'), $bio ? $bio : '-'),
 
 	// Nova College MODIFIED
-	array(__('Nid', 'tutor'), $nid ? $nid : '-'),
+	array(__('CPF', 'tutor'), $cpf ? $cpf : '-'),
+	array(__('Phone Number', 'tutor'), $phone_no ? $phone_no : '-'),
 );
 ?>
 
