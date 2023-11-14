@@ -30,3 +30,14 @@ header {
         border-bottom: none;
     }
 }
+
+.navbar-nav {
+    .menu-item {
+        a {
+            padding: 10px;
+        }
+        .sub-menu {
+            top: 39px;
+        }
+    }
+}
