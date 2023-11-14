@@ -21,10 +21,12 @@
     padding-top: 78px;
 }
 
-.header-default {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    border-bottom: none;
+header {
+    &.header-default {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        border-bottom: none;
+    }
 }
