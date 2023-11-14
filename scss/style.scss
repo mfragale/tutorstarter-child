@@ -32,8 +32,8 @@ header {
 }
 
 .navbar-nav {
-    .menu-item {
-        > a {
+    > li.menu-item {
+        a {
             padding: 10px;
         }
         .sub-menu {

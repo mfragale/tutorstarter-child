@@ -11,4 +11,4 @@
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Tags: education, e-commerce, blog, custom-logo, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, rtl-language-support, footer-widgets, left-sidebar, right-sidebar
  * Text Domain: tutorstarter
- */#content{padding-top:78px}header.header-default{position:fixed;left:0;right:0;z-index:100;border-bottom:none}.navbar-nav .menu-item>a{padding:10px}.navbar-nav .menu-item .sub-menu{top:39px}
+ */#content{padding-top:78px}header.header-default{position:fixed;left:0;right:0;z-index:100;border-bottom:none}.navbar-nav>li.menu-item a{padding:10px}.navbar-nav>li.menu-item .sub-menu{top:39px}
