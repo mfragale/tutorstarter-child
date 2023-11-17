@@ -53,7 +53,7 @@ add_filter('woocommerce_checkout_get_value', function ($input, $key) {
             return $current_user->user_email;
             break;
         case 'billing_phone':
-            return $current_user->phone;
+            return $current_user->phone_number;
             break;
     endswitch;
 }, 10, 2);
