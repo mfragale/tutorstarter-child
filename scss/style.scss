@@ -99,13 +99,12 @@ header {
     }
 }
 
-.theme-tutorstarter .woocommerce form .form-row input.input-text,
-.woocommerce form .form-row {
+.theme-tutorstarter .woocommerce form .form-row {
     .input-checkbox {
         width: 20px;
         height: 20px;
     }
-    textarea {
+    input.input-text {
         width: 100%;
     }
 }
