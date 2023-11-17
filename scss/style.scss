@@ -86,7 +86,7 @@ header {
             padding: 0;
 
             li {
-                background: var(--primary-menu-bg-color);
+                background: var(--wp--preset--color--off-white);
                 padding: 10px;
                 border-radius: 5px;
                 margin-bottom: 10px;
@@ -113,6 +113,10 @@ header {
                             font-size: 11px;
                         }
                     }
+                }
+
+                &:has(> input:checked) {
+                    background-color: var(--primary-menu-bg-color);
                 }
             }
         }
