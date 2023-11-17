@@ -63,7 +63,14 @@ header {
     }
 
     #payment {
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        margin-bottom: 0;
+
         ul.payment_methods {
+            padding: 0;
+
             li {
                 background: var(--primary-menu-bg-color);
                 padding: 10px;
@@ -83,7 +90,7 @@ header {
                 }
 
                 div.payment_box {
-                    background-color: none;
+                    background-color: transparent;
                     margin: 0;
                     padding: 0;
                 }
@@ -93,6 +100,36 @@ header {
 }
 
 .theme-tutorstarter .woocommerce form .form-row input.input-text,
-.woocommerce form .form-row textarea {
+.woocommerce form .form-row {
+    .input-checkbox {
+        width: 20px;
+        height: 20px;
+    }
+    textarea {
+        width: 100%;
+    }
+}
+
+#payment .payment_methods li[class*="pagarme"] input[type="text"],
+#payment .payment_methods li[class*="pagarme"] input[type="number"],
+#payment .payment_methods li[class*="pagarme"] input[type="email"],
+#payment .payment_methods li[class*="pagarme"] input[type="tel"],
+#payment .payment_methods li[class*="pagarme"] input[type="url"],
+#payment .payment_methods li[class*="pagarme"] input[type="password"],
+#payment .payment_methods li[class*="pagarme"] input[type="search"],
+#payment .payment_methods li[class*="pagarme"] select,
+#payment .payment_methods li[class*="pagarme"] textarea,
+#payment .payment_methods li[class*="pagarme"] .input-text {
     width: 100%;
+    height: 2.8em;
+    padding: 0.6em;
+    font-size: 1em;
+    z-index: unset;
+    border: 1.5px solid rgba(10, 8, 59, 0.1);
+    border-radius: 6px;
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: rgba(10, 8, 59, 0.7);
 }
