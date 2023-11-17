@@ -93,6 +93,12 @@ header {
                     background-color: transparent;
                     margin: 0;
                     padding: 0;
+
+                    fieldset {
+                        label {
+                            font-size: 11px;
+                        }
+                    }
                 }
             }
         }
