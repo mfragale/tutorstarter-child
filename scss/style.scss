@@ -54,10 +54,45 @@ header {
     .order-details-heading {
         display: none;
     }
+
     .woocommerce-billing-fields {
         h3 {
             font-size: 26px;
             line-height: 48px;
         }
     }
+
+    #payment {
+        ul.payment_methods {
+            li {
+                background: var(--primary-menu-bg-color);
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+
+                input {
+                    margin: 0 0.3em 0 0;
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: text-bottom;
+                }
+                label {
+                    cursor: pointer;
+                    display: inline-block;
+                    width: 87%;
+                }
+
+                div.payment_box {
+                    background-color: none;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.theme-tutorstarter .woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+    width: 100%;
 }
