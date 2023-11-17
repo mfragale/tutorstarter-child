@@ -50,6 +50,20 @@ header {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .tutor-dashboard {
+        .tutor-frontend-dashboard-maincontent {
+            ul.tutor-dashboard-permalinks {
+                margin-right: 0;
+
+                &:before {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
 .woocommerce-checkout {
     .order-details-heading {
         display: none;
