@@ -49,3 +49,15 @@ header {
         }
     }
 }
+
+.woocommerce-checkout {
+    .order-details-heading {
+        display: none;
+    }
+    .woocommerce-billing-fields {
+        h3 {
+            font-size: 26px;
+            line-height: 48px;
+        }
+    }
+}

@@ -14,14 +14,6 @@ function my_theme_enqueue_styles()
 // Remove the additional notes area from the WooCommerce checkout
 add_filter('woocommerce_enable_order_notes_field', '__return_false');
 
-// Remove WooCommerce Checkout page title
-add_filter('woocommerce_show_page_title', 'bbloomer_hide_shop_page_title');
-function bbloomer_hide_shop_page_title($title)
-{
-    if (is_checkout()) $title = false;
-    return $title;
-}
-
 
 
 
