@@ -32,12 +32,20 @@ header {
 }
 
 .navbar-nav {
-    > li.menu-item {
+    > li {
         a {
             padding: 10px;
         }
         .sub-menu {
             top: 39px;
+        }
+    }
+}
+
+.footer-widgets {
+    .widget_text {
+        a {
+            color: var(--footer-widget-text-color);
         }
     }
 }
