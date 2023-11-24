@@ -108,7 +108,7 @@
 							<?php _e('Phone Number', 'tutor'); ?>
 						</label>
 
-						<input type="text" name="phone" value="<?php echo tutor_utils()->input_old('phone'); ?>" placeholder="<?php _e('Phone Number', 'tutor'); ?>">
+						<input type="text" name="phone_number" value="<?php echo tutor_utils()->input_old('phone_number'); ?>" placeholder="<?php _e('Phone Number', 'tutor'); ?>">
 					</div>
 				</div>
 			</div>

@@ -21,7 +21,7 @@ $lname = $user->last_name;
 $uname = $user->user_login;
 $email = $user->user_email;
 
-$phone = get_user_meta($uid, 'phone', true);
+$phone_number = get_user_meta($uid, 'phone_number', true);
 $job   = nl2br(wp_strip_all_tags(get_user_meta($uid, '_tutor_profile_job_title', true)));
 $bio   = get_user_meta($uid, '_tutor_profile_bio', true);
 
@@ -36,7 +36,7 @@ $profile_data = array(
 	array(__('Last Name', 'tutor'), ($lname ? $lname : __('-'))),
 	array(__('Username', 'tutor'), $uname),
 	array(__('Email', 'tutor'), $email),
-	array(__('Phone Number', 'tutor'), ($phone ? $phone : '-')),
+	array(__('Phone Number', 'tutor'), ($phone_number ? $phone_number : '-')),
 	array(__('Skill/Occupation', 'tutor'), ($job ? $job : '-')),
 	array(__('Biography', 'tutor'), $bio ? $bio : '-'),
 

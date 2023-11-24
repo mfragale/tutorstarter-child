@@ -145,7 +145,7 @@ $max_filesize   = floatval(ini_get('upload_max_filesize')) * (1024 * 1024);
 				<label class="tutor-form-label tutor-color-secondary">
 					<?php esc_html_e('Phone Number', 'tutor'); ?>
 				</label>
-				<input class="tutor-form-control" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="phone" value="<?php echo esc_html(filter_var(get_user_meta($user->ID, 'phone', true), FILTER_SANITIZE_NUMBER_INT)); ?>" placeholder="<?php esc_attr_e('Phone Number', 'tutor'); ?>">
+				<input class="tutor-form-control" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="phone_number" value="<?php echo esc_html(filter_var(get_user_meta($user->ID, 'phone_number', true), FILTER_SANITIZE_NUMBER_INT)); ?>" placeholder="<?php esc_attr_e('Phone Number', 'tutor'); ?>">
 			</div>
 		</div>
 
