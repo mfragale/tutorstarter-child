@@ -68,7 +68,7 @@ $profile_data = array(
 
 	<div class="tutor-row tutor-mb-24">
 		<div class="tutor-col-12">
-			<a href="/painel/settings/" class="tutor-btn tutor-btn-primary">
+			<a href="<?php echo $profile_settings_link; ?>" class="tutor-btn tutor-btn-primary">
 				<?php esc_html_e('Edit Profile', 'tutor'); ?>
 			</a>
 		</div>
