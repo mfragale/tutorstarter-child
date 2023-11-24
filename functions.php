@@ -101,6 +101,8 @@ if (!function_exists('add_phone_number_after_user_register')) {
         if (!empty($_POST['phone_number'])) {
             $phone_number = sanitize_text_field($_POST['phone_number']);
             update_user_meta($user_id, 'phone_number', $phone_number);
+            update_user_meta($user_id, 'billing_phone', $phone_number);
+            update_user_meta($user_id, 'billing_cellphone', $phone_number);
         }
     }
 }
