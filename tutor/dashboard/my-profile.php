@@ -21,13 +21,13 @@ $lname = $user->last_name;
 $uname = $user->user_login;
 $email = $user->user_email;
 
-$phone = get_user_meta($uid, 'phone_number', true);
+$phone = get_user_meta($uid, 'phone', true);
 $job   = nl2br(wp_strip_all_tags(get_user_meta($uid, '_tutor_profile_job_title', true)));
 $bio   = get_user_meta($uid, '_tutor_profile_bio', true);
 
 // Nova College MODIFIED
-//$cpf = get_user_meta($uid, '_cpf', true);
-$phone_no = get_user_meta($uid, '_phone_no', true);
+// $cpf = get_user_meta($uid, '_cpf', true);
+// $phone_no = get_user_meta($uid, '_phone_no', true);
 
 
 $profile_data = array(
@@ -42,7 +42,7 @@ $profile_data = array(
 
 	// Nova College MODIFIED
 	// array(__('CPF', 'tutor'), $cpf ? $cpf : '-'),
-	array(__('Phone Number', 'tutor'), $phone_no ? $phone_no : '-'),
+	// array(__('Phone Number', 'tutor'), $phone_no ? $phone_no : '-'),
 );
 ?>
 

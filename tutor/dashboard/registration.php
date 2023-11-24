@@ -108,7 +108,7 @@
 							<?php _e('Phone Number', 'tutor'); ?>
 						</label>
 
-						<input type="text" name="phone_no" value="<?php echo tutor_utils()->input_old('phone_no'); ?>" placeholder="<?php _e('Phone Number', 'tutor'); ?>">
+						<input type="text" name="phone" value="<?php echo tutor_utils()->input_old('phone'); ?>" placeholder="<?php _e('Phone Number', 'tutor'); ?>">
 					</div>
 				</div>
 			</div>
@@ -125,7 +125,7 @@
 
 						<input type="text" name="cpf" value="<?php // echo tutor_utils()->input_old('cpf'); 
 																?>" placeholder="<?php // _e('CPF', 'tutor'); 
-																																?>">
+																					?>">
 					</div>
 				</div>
 			</div> -->

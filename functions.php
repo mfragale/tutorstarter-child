@@ -53,10 +53,12 @@ add_filter('woocommerce_checkout_get_value', function ($input, $key) {
             return $current_user->user_email;
             break;
         case 'billing_phone':
-            return $current_user->phone_no;
+            return $current_user->phone;
             break;
     endswitch;
 }, 10, 2);
+
+
 
 
 // Nova College MODIFIED
@@ -83,11 +85,11 @@ add_filter('woocommerce_checkout_get_value', function ($input, $key) {
 
 
 // Nova College MODIFIED
-add_filter('tutor_student_registration_required_fields', 'required_phone_no_callback');
-if (!function_exists('required_phone_no_callback')) {
-    function required_phone_no_callback($atts)
+add_filter('tutor_student_registration_required_fields', 'required_phone_callback');
+if (!function_exists('required_phone_callback')) {
+    function required_phone_callback($atts)
     {
-        $atts['phone_no'] = 'Phone Number field is required';
+        $atts['phone'] = 'Phone Number field is required';
         return $atts;
     }
 }
@@ -96,9 +98,9 @@ add_action('profile_update', 'add_phone_after_user_register');
 if (!function_exists('add_phone_after_user_register')) {
     function add_phone_after_user_register($user_id)
     {
-        if (!empty($_POST['phone_no'])) {
-            $phone_number = sanitize_text_field($_POST['phone_no']);
-            update_user_meta($user_id, 'phone_no', $phone_number);
+        if (!empty($_POST['phone'])) {
+            $phone = sanitize_text_field($_POST['phone']);
+            update_user_meta($user_id, 'phone', $phone);
         }
     }
 }
