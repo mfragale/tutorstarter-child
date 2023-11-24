@@ -37,8 +37,8 @@ $profile_data = array(
 	array(__('Username', 'tutor'), $uname),
 	array(__('Email', 'tutor'), $email),
 	array(__('Phone Number', 'tutor'), ($phone_number ? $phone_number : '-')),
-	array(__('Skill/Occupation', 'tutor'), ($job ? $job : '-')),
-	array(__('Biography', 'tutor'), $bio ? $bio : '-'),
+	// array(__('Skill/Occupation', 'tutor'), ($job ? $job : '-')),
+	// array(__('Biography', 'tutor'), $bio ? $bio : '-'),
 
 	// Nova College MODIFIED
 	// array(__('CPF', 'tutor'), $cpf ? $cpf : '-'),
@@ -55,6 +55,7 @@ $profile_data = array(
 			<div class="tutor-col-12 tutor-col-sm-5 tutor-col-lg-3">
 				<span class="tutor-fs-6 tutor-color-secondary"><?php echo esc_html($data[0]); ?></span>
 			</div>
+
 			<div class="tutor-col-12 tutor-col-sm-7 tutor-col-lg-9">
 				<?php
 				echo 'Biography' === $data[0] ?
@@ -64,4 +65,12 @@ $profile_data = array(
 			</div>
 		</div>
 	<?php endforeach; ?>
+
+	<div class="tutor-row tutor-mb-24">
+		<div class="tutor-col-12">
+			<a href="/painel/settings/" class="tutor-btn tutor-btn-primary">
+				<?php esc_html_e('Edit Profile', 'tutor'); ?>
+			</a>
+		</div>
+	</div>
 </div>

@@ -149,9 +149,9 @@ $max_filesize   = floatval(ini_get('upload_max_filesize')) * (1024 * 1024);
 			</div>
 		</div>
 
-		<div class="tutor-row">
-			<!-- Nova College MODIFIED -->
-			<!-- <div class="tutor-col-12 tutor-col-sm-6 tutor-col-md-12 tutor-col-lg-6 tutor-mb-32">
+		<!-- <div class="tutor-row"> -->
+		<!-- Nova College MODIFIED -->
+		<!-- <div class="tutor-col-12 tutor-col-sm-6 tutor-col-md-12 tutor-col-lg-6 tutor-mb-32">
 				<label class="tutor-form-label tutor-color-secondary">
 					<?php // _e('CPF', 'tutor'); 
 					?>
@@ -160,27 +160,31 @@ $max_filesize   = floatval(ini_get('upload_max_filesize')) * (1024 * 1024);
 																							?>" placeholder="<?php // _e('CPF', 'tutor'); 
 																												?>">
 			</div> -->
-			<!-- Nova College MODIFIED -->
+		<!-- Nova College MODIFIED -->
 
-			<div class="tutor-col-12 tutor-col-sm-6 tutor-col-md-12 tutor-col-lg-6 tutor-mb-32">
+		<!-- <div class="tutor-col-12 tutor-col-sm-6 tutor-col-md-12 tutor-col-lg-6 tutor-mb-32">
 				<label class="tutor-form-label tutor-color-secondary">
-					<?php esc_html_e('Skill/Occupation', 'tutor'); ?>
+					<?php // esc_html_e('Skill/Occupation', 'tutor'); 
+					?>
 				</label>
-				<input class="tutor-form-control" type="text" name="tutor_profile_job_title" value="<?php echo esc_attr(get_user_meta($user->ID, '_tutor_profile_job_title', true)); ?>" placeholder="<?php esc_attr_e('UX Designer', 'tutor'); ?>">
-			</div>
-		</div>
+				<input class="tutor-form-control" type="text" name="tutor_profile_job_title" value="<?php // echo esc_attr(get_user_meta($user->ID, '_tutor_profile_job_title', true)); 
+																									?>" placeholder="<?php // esc_attr_e('UX Designer', 'tutor'); 
+																														?>">
+			</div> -->
+		<!-- </div> -->
 
-		<div class="tutor-row">
+		<!-- <div class="tutor-row">
 			<div class="tutor-col-12 tutor-mb-32">
 				<label class="tutor-form-label tutor-color-secondary">
-					<?php esc_html_e('Bio', 'tutor'); ?>
+					<?php // esc_html_e('Bio', 'tutor'); 
+					?>
 				</label>
 				<?php
-				$profile_bio = get_user_meta($user->ID, '_tutor_profile_bio', true);
-				wp_editor($profile_bio, 'tutor_profile_bio', tutor_utils()->get_profile_bio_editor_config());
+				// $profile_bio = get_user_meta($user->ID, '_tutor_profile_bio', true);
+				// wp_editor($profile_bio, 'tutor_profile_bio', tutor_utils()->get_profile_bio_editor_config());
 				?>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="tutor-row">
 			<div class="tutor-col-12 tutor-col-sm-6 tutor-col-md-12 tutor-col-lg-6 tutor-mb-32">
