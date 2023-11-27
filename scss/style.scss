@@ -19,6 +19,13 @@
 
 #content {
     padding-top: 78px;
+
+    @media screen and (max-width: 991px) {
+        padding-top: 74px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 70px;
+    }
 }
 
 header {
