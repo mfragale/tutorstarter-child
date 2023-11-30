@@ -32,6 +32,18 @@ function mytheme_et_project_posttype_args($args)
     ));
 }
 
+/**
+ * Remove course meta from loop - https://docs.themeum.com/tutor-lms/developer-documentation/filters/#tutor-template-functions-php
+ */
+add_filter('tutor_course_loop_meta', 'callback_so_18783534', 1, 2);
+function callback_so_18783534()
+{
+    return ' ';
+}
+
+
+
+
 
 
 /**
