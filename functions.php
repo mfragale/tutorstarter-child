@@ -42,6 +42,12 @@ function callback_so_18783534()
 }
 
 
+add_filter('tutor_course/single/instructors_html', 'callback_so_1878353', 1, 2);
+function callback_so_1878353()
+{
+    return ' ';
+}
+
 
 
 
