@@ -32,18 +32,23 @@ function mytheme_et_project_posttype_args($args)
     ));
 }
 
+
 /**
  * Remove course meta from loop - https://docs.themeum.com/tutor-lms/developer-documentation/filters/#tutor-template-functions-php
  */
-add_filter('tutor_course_loop_meta', 'callback_so_18783534', 1, 2);
-function callback_so_18783534()
-{
-    return ' ';
-}
+// add_filter('tutor_course_loop_meta', 'remove_course_meta', 1, 2);
+// function remove_course_meta()
+// {
+//     return ' ';
+// }
 
 
-add_filter('tutor_course/single/instructors_html', 'callback_so_1878353', 1, 2);
-function callback_so_1878353()
+/**
+ * Remove course instructors from single course page - https://docs.themeum.com/tutor-lms/developer-documentation/filters/#tutor-template-functions-php
+ */
+// Nova College MODIFIED
+add_filter('tutor_course/single/instructors_html', 'remove_course_instructor', 1, 2);
+function remove_course_instructor()
 {
     return ' ';
 }
