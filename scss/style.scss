@@ -33,8 +33,14 @@ header {
         position: fixed;
         left: 0;
         right: 0;
-        z-index: 100;
+        z-index: 99999999;
         border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed !important;
     }
 }
 
