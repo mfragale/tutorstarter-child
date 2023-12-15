@@ -84,6 +84,18 @@ add_filter('woocommerce_checkout_get_value', function ($input, $key) {
 
 
 
+/**
+ * Redirect WooCommerce Shop URL
+ */
+add_filter('woocommerce_return_to_shop_redirect', 'st_woocommerce_shop_url');
+function st_woocommerce_shop_url()
+{
+    return site_url() . '/cursos';
+}
+
+
+
+
 // Nova College MODIFIED
 // add_filter('tutor_student_registration_required_fields', 'required_cpf_no_callback');
 // if (!function_exists('required_cpf_no_callback')) {
